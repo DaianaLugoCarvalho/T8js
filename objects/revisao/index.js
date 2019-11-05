@@ -359,3 +359,38 @@ console.log(js4.dizMateria())
 
 console.dir(Professor.prototype)
 console.dir(js4.__proto__)
+
+
+const avo = { attrl: 'A'}
+const mae = {__proto__:avo, attr2:'B', attr3:'E'}
+const filha = { __proto__:mae, attr3:'C'}
+console.log(filha.attrl, filha.attr2, filha.attr3)
+
+class avo {
+    constructor (sobrenome){
+        this.sobrenome=sobrenome
+    }
+}
+
+
+class mae extends avo {
+    constructor (sobrenome, profissao="cineasta"){
+        super(sobrenome)
+        this.profissao= profissao
+    }
+}
+
+
+class filha extends mae {
+    constructor (){
+        super("silva")
+    }
+}
+
+
+const novaFilha = new filha
+novaFilha.profissao = "atriz"
+console.log(novaFilha)
+const novaMae = new mae
+console.log(novaMae)
+
