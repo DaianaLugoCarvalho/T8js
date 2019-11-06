@@ -84,3 +84,15 @@ document.querySelector('.button__search').addEventListener('click', function(){
         new Card(encontrado).render()
     })
 })
+
+
+// const limpar = (value) => {
+//     if (!value){
+//         console.log("nao tem nada")
+//         document.querySelector('.cards').innerHTML = resultados.map
+//         (objeto => {
+//             return nex Card(objeto).render()
+//         } ).join("")
+        
+//     }
+// }
