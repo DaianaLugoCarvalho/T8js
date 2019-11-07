@@ -27,6 +27,7 @@ let resultados = [
 ];
 
 
+<<<<<<< HEAD
 
 class Navbar {
     render(){
@@ -70,13 +71,27 @@ class Card{
 
 resultados.map(objeto => {
     new Card(objeto).render()
-})
+=======
+// // const renderNavbar = new Navbar
+
+// // renderNavbar.render()
+
+// // resultados.map(receita => {
+// //     new Card(receita).render()
+// >>>>>>> upstream/aula3
+// })
 
 document.querySelector('.button__search').addEventListener('click', function(){
     let inputValue = document.querySelector('.input__search').value.toUpperCase()
+<<<<<<< HEAD
     let achados = resultados.filter(objeto => {
     new Card(objeto).render()
         return objeto.titulo.toUpperCase().includes(inputValue) || objeto.ingredientes.toUpperCase().includes(inputValue)
+=======
+//     let achados = resultados.filter(receita => {
+//         // o meu inputValue está incluso em alguma parte do título OU dos ingredientes.
+//         return receita.titulo.toUpperCase().includes(inputValue) || receita.ingredientes.toUpperCase().includes(inputValue)
+// >>>>>>> upstream/aula3
     })
 
     document.querySelector('.cards').innerHTML = ""
@@ -84,6 +99,7 @@ document.querySelector('.button__search').addEventListener('click', function(){
         new Card(encontrado).render()
     })
 })
+<<<<<<< HEAD
 
 
 // const limpar = (value) => {
